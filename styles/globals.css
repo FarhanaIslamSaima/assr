@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.gradient-01 {
+  background-image: linear-gradient(
+    270deg,
+    hsl(295deg 76% 51%) 0%,
+    hsl(284deg 70% 73%) 26%,
+    hsl(257deg 70% 86%) 39%,
+    hsl(202deg 92% 90%) 50%,
+    hsl(215deg 77% 81%) 61%,
+    hsl(221deg 73% 70%) 74%,
+    hsl(220deg 76% 51%) 100%
+  );
+  filter: blur(125px);
+  z-index: -1;
+}
+
+.particle-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it's behind other elements */
+  }
+  .custom-text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Adjust values as needed */
+  }
+  .circleStyle{
+    display: "block";
+    width: "3rem";
+    height: "3rem";
+    border: "0.5rem solid #e9e9e9";
+    border-top: "0.5rem solid #3498db";
+    border-radius: "50%";
+    position: "absolute";
+    box-Sizing: "border-box";
+    top: 0;
+    left: 0;
+
+  }
+  .ontainerStyle {
+    position: "relative";
+    width: "3rem";
+    height: "3rem";
+    box-Sizing: "border-box"
+  };
+  .dropdown:hover .dropdown-menu{
+    display: block;
+  }
+
+  .socialAnimation{
+    @apply bg-orange-200 rounded-full hover:bg-white ;
+  }
+
+  .socialButton{
+    @apply text-gray-900 hover:text-blue
+  }
+
+  .card-border-effect{
+    @apply border-t-[2px]
+    border-orange-200 rounded-lg 
+      hover:border-t-[0px] hover:border-b-[2px] hover:duration-150
+  }
+

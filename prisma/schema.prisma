@@ -1,0 +1,78 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       String    @id @default(cuid()) @map("_id")
+  name     String?
+  email    String    @unique
+  image    String?
+  posts    Post[]
+  comments Comment[]
+}
+
+model Tag {
+  id    String @id @default(cuid()) @map("_id")
+  title String
+  posts Post[]
+}
+
+model Post {
+  id       String    @id @default(cuid()) @map("_id")
+  title    String
+  desc     String
+  img      String?
+  tagId    String
+  author   String
+  tag      Tag       @relation(fields: [tagId], references: [id])
+  userId   String?
+  user     User?     @relation(fields: [userId], references: [id])
+  comments Comment[]
+}
+
+model Comment {
+  id     String @id @default(cuid()) @map("_id")
+  desc   String
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+  postId String
+  post   Post   @relation(fields: [postId], references: [id])
+}
+
+model Panel {
+  id        String  @id @default(cuid()) @map("_id")
+  name      String
+  email     String
+  img       String
+  post      String
+  dept      String
+  phone     String?
+  facebook  String?
+  linkedin  String?
+  portfolio String?
+}
+
+model Event {
+  id       String   @id @default(cuid()) @map("_id")
+  name     String
+  year     String
+  desc     String
+  category String?
+  images   String[]
+}
+
+model Achievement {
+  id          String   @id @default(cuid()) @map("_id")
+  title       String
+  paticipants String[]
+  desc        String?
+  year        String
+}
