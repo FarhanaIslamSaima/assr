@@ -2,7 +2,7 @@
 import React,{useRef,useState,useEffect} from 'react';
 import {motion,Variants,useInView,useAnimationControls} from 'framer-motion'
 import styles from '../styles'
-import {fadeIn,staggerContainer} from '../Utils/motion'
+import {fadeIn} from '../Utils/motion'
 import { useScroll } from "framer-motion"
 import ActivitiesCard from './ActivitiesCard';
 import { exploreWorlds } from '@/Constants';
