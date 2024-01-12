@@ -11,7 +11,7 @@ const page = () => {
   useEffect(()=>{
     const fetchData = async () =>{
       try {
-        const response = await fetch('http://localhost:3000/api/panels');
+        const response = await fetch('https://assr-6kka-t1lt8pfue-farhanaislams-projects.vercel.app/api/panels');
         const data = await response.json();
         setPanelsData(data);
 

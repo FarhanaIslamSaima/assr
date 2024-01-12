@@ -1,4 +1,4 @@
-const url="http://localhost:3000"
+const url="https://assr-6kka-t1lt8pfue-farhanaislams-projects.vercel.app/"
 export const getData=async()=>{
     try{
         const query=await fetch(`${url}/api/blogs`);

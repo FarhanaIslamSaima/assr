@@ -14,7 +14,7 @@ import { GetServerSideProps,InferGetServerSidePropsType } from 'next';
     const param=new URLSearchParams(useSearchParams());
     const id=param.get('id');
     // Fetch data from external API
-    const res=await fetch(`http://localhost:3000/api/blogs/${id}`)
+    const res=await fetch(`https://assr-6kka-t1lt8pfue-farhanaislams-projects.vercel.app/api/blogs/${id}`)
 
   
     // The return value is *not* serialized
