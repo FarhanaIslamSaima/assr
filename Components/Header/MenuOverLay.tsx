@@ -47,7 +47,7 @@ const MenuOverLay = () => {
     return (
         <ul className="flex xs:bg-black  bg-black flex-col py-4 items-center">
         {navLinks.map((link, index) => (
-          <li key={index}>
+          <li key={index} className='group'>
             <NavLinks link={link} active={active}  />
           </li>
         ))}
