@@ -23,7 +23,7 @@ interface props{
 const AchivementCard = ({item}:any) => {
     console.log(item)
     return (
-        <div className='bg-gray-900 h-[300px] rounded-xl'>
+        <div className='bg-gray-900  rounded-xl p-5 '>
             <div className='card text-white grid grid-cols-3
                              gap-y-10 px-5 pt-[8%]'>
 
@@ -37,7 +37,7 @@ const AchivementCard = ({item}:any) => {
                     <p>{item.desc}</p>
                     <p className='text-slate-400'>{item.year}</p>
                 </div>
-                <div className='justify-self-start py-2 pl-8 col-span-2 border-l h-[100px] border-slate-300'>
+                <div className='justify-self-start py-2 pl-8 col-span-2 border-l border-slate-300'>
                     <h1 className='text-lg font-semibold mb-3'>Paticipants:</h1>
                     {item.paticipants.map((participant:any)=>(
                         <p className='text-md leading-6 pl-2'>{participant}</p>

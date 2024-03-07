@@ -25,7 +25,7 @@ const Achievement = () => {
             <p className='text-white mb-20 font-bold mt-[50px] text-4xl md:text-4xl'>Achievements</p>
             </div>
            
-            <div className='grid grid-cols-2 gap-5 mx-[10%]'>
+            <div className='grid grid-cols-1 xl:grid-cols-2 gap-5 mx-[10%]'>
                 {
                     posts.slice(0,4).map((item,index)=>(
 
