@@ -112,10 +112,10 @@ const Header = () => {
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {
                 navLinks.map((item=>(
-                  <Link href={item.path} ><li className='my-3 px-2 py-2 hover:bg-white hover:text-black'>
-                    {item.year?<>
+                  <Link href={item.path} ><li className='my-3 px-2 py-2 hover:border-b-[5px] border-blue'>
+                    {item.year?<div className='group'>
                       <button className={'flex justify items-center'}onClick={()=>setOpen(!open)}>{item.title}<span><IoIosArrowDown/></span></button>
-                      <div className={`${open?'block':'hidden'} transition-all duration-6000 ease-in-out xl:absolute top-19.5 bg-white rounded rounded-5 z-10   px-[20px] py-[10px]`}>
+                      <div className={`hidden group-hover:block transition-all duration-6000 ease-in-out xl:absolute top-19.5 bg-white rounded rounded-5 z-10   px-[20px] py-[10px]`}>
                 
                 <ul className='transition-all duration-300 ease-in-out'>
                   {
@@ -135,7 +135,7 @@ const Header = () => {
                 </ul>
               </div>
                     
-                    </>
+                    </div>
                     :item.title}
                   </li></Link>
                 )))

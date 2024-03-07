@@ -1,9 +1,15 @@
 import prisma from "@/Utils/connect";
 import { NextResponse } from "next/server";
 
-export const GET = async (req) => {
+export const GET = async (req,{params}) => {
+  const {event}=params;
+  
   try {
-    const events = await prisma.event.findMany();
+    const events = await prisma.event.findMany({
+      where:{
+           category:event
+      }
+    });
     console.log(events)
     return new NextResponse(JSON.stringify(events.category));
     
