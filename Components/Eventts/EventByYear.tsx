@@ -26,7 +26,7 @@ console.log(cat);
              <div className='text-white flex flex-col gap-10 justify-center h-screen'>
            
             
-            <div className='mt-[5px] flex justify-center '>
+            <div className='mt-[20px] flex justify-center '>
                 <p className='text-xl font-extrabold'>See All {cat} List of Year {year}</p>
 
             </div>
