@@ -22,7 +22,7 @@ const Blogs = () => {
         <>
         <div className='text-white flex flex-col gap-10 justify-center items-center mt-[20]'>
             <div className='flex flex-col items-center'>
-            <p className=' font-bold mt-[50px] text-sm md:text-4xl'>EXPLORE OUR BLOGS</p>
+            <p className=' font-bold mt-[50px] text-md md:text-4xl'>EXPLORE OUR BLOGS</p>
             </div>
            
             <div className=''>

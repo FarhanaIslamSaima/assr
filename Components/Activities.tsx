@@ -64,7 +64,7 @@ const Activities = () => {
            
         
       
-     className='text-4xl font-extrabold m-20 animate-pulse'>Explore Our Activities</motion.div>
+     className=' text:md md:text-4xl font-extrabold m-20 animate-pulse'>Explore Our Activities</motion.div>
              </div>
             <div className='mt-[10px] flex lg:flex-row flex-col min-h-[50vh] gap-5 mx-20' 
 
