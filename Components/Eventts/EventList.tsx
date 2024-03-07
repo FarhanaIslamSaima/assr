@@ -23,7 +23,7 @@ const EventList = ({item}:props) => {
                cat:`${item}`
     
     }
-    }}><div className=' cursor:pointer text-black bg-white p-4  flex items-center justify-center flex-col rounded rounded-2 mx-40 hover:bg-gray-500  '>
+    }}><div className=' cursor:pointer text-black bg-white p-4 w-100 flex items-center justify-center flex-col rounded rounded-2 mx-2 hover:bg-gray-500  '>
     
      <div className='py-2 text-3xl font-extrabold h-100'>
         <p>{item.toUpperCase()}</p>
