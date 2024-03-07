@@ -10,7 +10,7 @@ const Achievement = () => {
 
     useEffect(()=>{
         const getAll=async()=>{
-            const query=await fetch('https://assr-6kka-t1lt8pfue-farhanaislams-projects.vercel.app/api/achievements');
+            const query=await fetch('api/achievements');
             const data=await query.json();
            setPosts(data);
             
