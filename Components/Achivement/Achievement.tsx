@@ -22,7 +22,7 @@ const Achievement = () => {
         <>
         <div className='mt-[20]'>
             <div className='flex flex-col items-center'>
-            <p className='text-white mb-20 font-bold mt-[50px] text-4xl md:text-4xl'>Achievements</p>
+            <p className='text-white mb-20 font-bold mt-[50px] text-4xltext:lg md:text-4xl'>Achievements</p>
             </div>
            
             <div className='grid grid-cols-1 xl:grid-cols-2 gap-5 mx-[10%]'>

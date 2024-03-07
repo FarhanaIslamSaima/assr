@@ -23,7 +23,7 @@ const ActivitiesCard = ({id,item,index,active,setActive}:props) => {
     return (
     <motion.div
         variants={fadeIn('right','spring',index*0.5,0.75)}
-        className={`relative flex ${active==id?'lg:flex-[3.5]':'lg:flex-[1.5] flex[2]'} flex items-center justify-center min-w-[50px] h-[300px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer `}
+        className={`relative flex ${active==id?'lg:flex-[3.5]':'lg:flex-[1.5] flex[3]'} flex items-center justify-center min-w-[50px] h-[300px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer `}
         onHoverStart={() => setActive(id)}
       >
         <img
