@@ -1,8 +1,8 @@
 import prisma from "@/Utils/connect";
 import { NextResponse } from "next/server";
 
-export const GET = async (req,{params}) => {
-  const {event}=params;
+export const GET = async (req,) => {
+ 
   
   try {
     const events = await prisma.event.findMany({
