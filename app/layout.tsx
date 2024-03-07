@@ -27,7 +27,9 @@ export default function RootLayout({
         
       <nav>
         <Particle/>
+        <div className=''>
         <MainHeader/>
+        </div>
       </nav>
     <Suspense fallback={<Loading/>}>
         {children}

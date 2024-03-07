@@ -23,11 +23,11 @@ console.log(cat);
     },[cat])
     return (
         <div>
-             <div className='text-white flex flex-col gap-10 justify-center h-screen'>
+             <div className='text-white flex flex-col gap-10 justify-center p-2 '>
            
             
-            <div className='mt-[20px] flex justify-center '>
-                <p className='text-xl font-extrabold'>See All {cat} List of Year {year}</p>
+            <div className='mt-[100px] flex justify-center '>
+                <p className='text-lg font-extrabold'>See All {cat} List of Year {year}</p>
 
             </div>
            
